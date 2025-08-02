@@ -1,0 +1,11 @@
+$(document).ready(...): si assicura che il DOM sia completamente caricato prima di eseguire codice.
+
+$('#btn'): seleziona l'elemento con ID btn.
+
+.click(...): aggiunge un listener che si attiva al click.
+
+alert('Hello world!'): mostra il messaggio
+
+La variabile count viene dichiarata con let all'interno di $(document).ready(...), ma fuori dalla funzione .click(), in modo che venga mantenuta tra un click e l'altro.
+
+Se la dichiari dentro .click(), si resetterebbe a 0 ogni volta (non utile).
