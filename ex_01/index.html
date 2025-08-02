@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Test Alert jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <button id="btn">Cliccami</button>
+
+    <script>
+      $(document).ready(function () {
+        let count = 0; // ✅ definita prima dell'uso
+
+        $("#btn").click(function () {
+          count++;
+          console.log("Click count:", count);
+          alert("Hai cliccato " + count + " volte");
+        });
+      });
+    </script>
+  </body>
+</html>
